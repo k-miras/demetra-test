@@ -2,7 +2,13 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  parseMinPrice(productId: number) : number{
+    return productId;
+  }
+  parseSellerSpot(sellerId: number) : number{
+    return sellerId;
+  }
+  parseProduct(productId:number): number {
+    return productId;
   }
 }
